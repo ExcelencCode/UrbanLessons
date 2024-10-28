@@ -6,12 +6,7 @@ for i in range (1, code+1):            # Перебираем все числа 
             continue
         elif (code % (i + j) == 0):    # условие образования пары
             para = [i, j]              # промежуточный список, чтобы разделить пары в списке passwords
-            # for y in passwords:
-            #     if passwords[y][0] == para[1] and passwords[y][1] == para[0]:
-            #         continue
             passwords.append(para)
-print(passwords)
-
 new_password = []   # результирующий список без разделителей
 for x in range(len(passwords)):
     new_password.extend(passwords[x])
