@@ -34,7 +34,7 @@ class Shop:
                     print(f"Продукт {product.name} уже есть в магазине")
                 else:
                     file.write(f'{product}\n')
-                    existing_products.add(product.name) # и вот это позволяет избежать появления
+                    existing_products.add(product.name) # и вот это позволяет избежать появления дублей продуктов
 
 # Создаем файл магазина
 s1 = Shop()
