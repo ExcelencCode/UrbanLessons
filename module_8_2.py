@@ -13,7 +13,7 @@ def personal_sum(numbers):
     return result, incorrect_data
 
 def calculate_average(numbers):
-     try:
+    try:
         total, incorrect_data = personal_sum(numbers)
         return total / (len(numbers) - incorrect_data)
 
